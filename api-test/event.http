@@ -1,0 +1,31 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+    "name": "Test event",
+    "description": "Description",
+    "location": "Test local",
+    "dateTime": "2025-01-01T15:30:00.000Z"
+}
+ 
+###
+
+PUT http://localhost:3333/events/3
+Content-Type: application/json
+
+{
+    "name": "Test event 3",
+    "description": "Description",
+    "location": "Test local",
+    "dateTime": "2025-01-01T15:30:00.000Z"
+}
+ 
+###
+
+GET http://localhost:3333/events
+
+###
+DELETE http://localhost:3333/events/7
+
+###
+GET http://localhost:3333/events/3
