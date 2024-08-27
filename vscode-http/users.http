@@ -2,7 +2,17 @@ POST http://localhost:3333/users/signup
 Content-Type: application/json
 
 {
-    "email": "teste@email.com",
+    "email": "teste2@example.com",
+    "password": "123"
+}
+ 
+###
+
+POST http://localhost:3333/login
+Content-Type: application/json
+
+{
+    "email": "teste2@example.com",
     "password": "123"
 }
  
